@@ -9,6 +9,8 @@ return
 end
 
 select * from product_table()
+select id as code, name as pname,price into new_table2 from product_table() where 1=2
+select * from new_table2
 
 select * into new_table from product_table()
 
